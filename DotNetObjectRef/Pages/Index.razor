@@ -9,11 +9,18 @@
 }
 
 <button @onclick="@Dispose">2. Dispose SampleComponent</button>
-
-1. Click SampleComponent Button "1. Click ME". We have a settimeout with 3 seconds delay to to invoke a dotnet method.
-2. Dispose the SampleComponent via the "Dispose Sample Component" button
-
-Error: There is no tracked object with id '1'. Perhaps the DotNetObjectReference instance was already disposed. (Parameter 'dotNetObjectId')
+<ol>
+    <li>
+        Click SampleComponent Button.
+        <i> We have a settimeout with 3 seconds delay to to invoke a dotnet method.</i>
+    </li>
+    <li>
+        Dispose the SampleComponent via the "Dispose Sample Component" button
+    </li>
+    <li>
+        Error: There is no tracked object with id '1'. Perhaps the DotNetObjectReference instance was already disposed. (Parameter 'dotNetObjectId')
+    </li>
+</ol>
 
 @code {
     public bool Visible { get; set; } = true;
